@@ -1,5 +1,5 @@
 {
-  "name": "heroku-starter-project",
+  "name": "Bar Portfolio",
   "scripts": {
     "start": "gulp",
     "build-client": "cd ./src/client && npm run build",
