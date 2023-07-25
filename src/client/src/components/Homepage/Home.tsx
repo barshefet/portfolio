@@ -5,9 +5,12 @@ const Home = () => {
   const nav = useNavigate();
   return (
     <>
-      <h1>Home</h1>
-      <div onClick={() => nav("/portfolio")}>
-        <h2>Next page</h2>
+      <div className="container">
+        
+        <h1>Home</h1>
+        <div onClick={() => nav("/portfolio")}>
+          <h2>Next page</h2>
+        </div>
       </div>
     </>
   );
