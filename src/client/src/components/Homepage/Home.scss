@@ -1,0 +1,40 @@
+.body {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.container{
+  width: 100%;
+}
+.vid {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: "overlap";
+
+  .homevid {
+    grid-area: overlap;
+    margin-left: calc(50% - 600px);
+  }
+  .name-container {
+    position: relative;
+    top: 60%;
+    left: 15%;
+    grid-area: overlap;
+    width: fit-content;
+    height: fit-content;
+    z-index: 2;
+    .name {
+      color: rgb(255, 209, 43);
+      font-size: 50px;
+      margin-bottom: 0;
+      text-shadow: 2px 2px 3px rgb(160, 4, 4);
+    }
+    .description {
+      margin-top: 0;
+      color: white;
+      font-weight: 300;
+      text-shadow: 1px 1px 2px black;
+    }
+  }
+}

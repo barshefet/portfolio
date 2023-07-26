@@ -1,0 +1,79 @@
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  font-weight: 300;
+  margin-top: 200px;
+  margin-bottom: 40px;
+
+  .left-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    
+  }
+  .right-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 100px;
+    .insta {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+      }
+      a{
+        text-decoration: none;
+        color: white;
+        &:hover{
+            color: rgba(255, 255, 255, 0.696);
+        }
+    }
+    }
+    .github {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 20px;
+          height: 20px;
+          margin-right: 10px;
+          background-color: white;
+          border-radius: 5px;
+          padding: 3px;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            &:hover{
+                color: rgba(255, 255, 255, 0.696);
+            }
+        }
+      }
+  }
+}
+.rights {
+  position: relative;
+  background-color: rgb(45, 45, 45);
+  height: 25px;
+
+  font-weight: 300;
+  color: rgb(105, 105, 105);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  p {
+    margin-left: 120px;
+  }
+}
+
+h4 {
+  font-weight: 300;
+  font-size: 18px;
+}
