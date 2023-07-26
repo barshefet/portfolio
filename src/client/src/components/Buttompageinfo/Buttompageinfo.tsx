@@ -11,11 +11,15 @@ const Buttompageinfo = () => {
         <div className="right-info">
           <div className="insta">
             <img src="images/insticon.png" />
-            <h4><a href="https://www.instagram.com/bar_shefet/">bar_shefet</a></h4>
+            <h4>
+              <a href="https://www.instagram.com/bar_shefet/">bar_shefet</a>
+            </h4>
           </div>
           <div className="github">
             <img src="images/githublogo.png" />
-          <h4><a href="https://github.com/barshefet">barshefet</a></h4>
+            <h4>
+              <a href="https://github.com/barshefet">barshefet</a>
+            </h4>
           </div>
         </div>
       </div>
