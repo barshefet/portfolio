@@ -1,4 +1,3 @@
-import React from "react";
 import Navmenu from "../Navmenu/Navmenu";
 import './Photography.scss'
 import Buttompageinfo from "../Buttompageinfo/Buttompageinfo";

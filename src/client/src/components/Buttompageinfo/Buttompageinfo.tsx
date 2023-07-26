@@ -1,4 +1,3 @@
-import React from "react";
 import "./Buttompageinfo.scss";
 
 const Buttompageinfo = () => {

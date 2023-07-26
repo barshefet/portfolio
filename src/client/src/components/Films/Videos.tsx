@@ -1,4 +1,3 @@
-import React from "react";
 import "./Videos.scss";
 import { videolist } from "../../assets/videoslist";
 
@@ -8,11 +7,11 @@ const Videos = () => {
       {videolist.map((vid: string) => (
         <iframe
           className="film-vid"
-          width="480"
-          height="288"
+          width="576"
+          height="345"
           src={vid}
           title="YouTube video player"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; loop"
           allowFullScreen
         ></iframe>

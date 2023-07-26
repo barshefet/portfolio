@@ -1,6 +1,5 @@
-import React from "react";
 import Navmenu from "../Navmenu/Navmenu";
-import Videos from "./videos";
+import Videos from "./Videos";
 import Buttompageinfo from "../Buttompageinfo/Buttompageinfo";
 import "./Films.scss";
 

@@ -1,11 +1,8 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
 import Navmenu from "../Navmenu/Navmenu";
 import "./Home.scss";
 import Buttompageinfo from "../Buttompageinfo/Buttompageinfo";
 
 const Home = () => {
-  const nav = useNavigate();
   return (
     <>
       <div className="container">
@@ -18,7 +15,7 @@ const Home = () => {
             height={"720"}
             src="https://www.youtube.com/embed/SDD8jSE_-BM?controls=0&autoplay=1&mute=1&playlist=SDD8jSE_-BM&loop=1"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; loop"
             
           ></iframe>
