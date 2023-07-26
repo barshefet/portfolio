@@ -1,1 +1,1 @@
-export const videos: string[] = ["https://www.youtube.com/watch?v=6Vu0fcjz8T8&ab_channel=Bar", "https://www.youtube.com/watch?v=SDD8jSE_-BM&ab_channel=Bar"]
+export const videolist: string[] = ["https://www.youtube.com/embed/6Vu0fcjz8T8","https://www.youtube.com/embed/SDD8jSE_-BM"]

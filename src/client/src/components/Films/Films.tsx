@@ -1,7 +1,8 @@
 import React from "react";
 import Navmenu from "../Navmenu/Navmenu";
 import Videos from "./videos";
-import './Films.scss'
+import Buttompageinfo from "../Buttompageinfo/Buttompageinfo";
+import "./Films.scss";
 
 const Films = () => {
   return (
@@ -11,6 +12,7 @@ const Films = () => {
         <h1>Films</h1>
         <Videos />
       </div>
+      <Buttompageinfo />
     </>
   );
 };
