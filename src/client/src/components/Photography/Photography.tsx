@@ -1,12 +1,18 @@
 import React from "react";
 import Navmenu from "../Navmenu/Navmenu";
 import './Photography.scss'
+import Buttompageinfo from "../Buttompageinfo/Buttompageinfo";
+import Pics from "./Pics";
 
 const Photography = () => {
   return (
     <>
       <Navmenu />
-      <div>Photography</div>
+      <div className="photos-container">
+        <h1>Photography</h1>
+        <Pics />
+        </div>
+        <Buttompageinfo />
     </>
   );
 };
