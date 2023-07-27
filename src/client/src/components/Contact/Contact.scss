@@ -1,11 +1,64 @@
-.contact-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 80px;
-    
-    h1{
-        color: white;
+@mixin icon {
+  width: 60px;
+  margin: 20px;
+  &:hover {
+    cursor: pointer;
+    scale: 1.1;
+  }
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  .contact-information {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "overlap";
+
+    .digits {
+      display: flex;
+      flex-direction: column;
+      z-index: 4;
+      color: rgb(255, 209, 43);
+      text-shadow: 2px 2px 3px rgb(160, 4, 4);
+      grid-area: overlap;
+      justify-content: center;
+      align-items: center;
+      font-size: 25px;
+      .icons {
+        display: flex;
+        justify-content: space-between;
+        .icon1 {
+          @include icon();
+        }
+        .icon2 {
+          @include icon();
+          background-color: white;
+          border-radius: 10px;
+          padding: 1px;
+        }
+      }
     }
+    .frame {
+      position: relative;
+      z-index: 2;
+      grid-area: overlap;
+      width: 800px;
+    }
+    .painting {
+      position: relative;
+      z-index: 1;
+      grid-area: overlap;
+      width: 700px;
+      top: 18%;
+      left: calc(50% - 350px);
+    }
+  }
+  h1 {
+    color: white;
+  }
 }
