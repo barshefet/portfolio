@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import './Navmenu.scss'
+import "./Navmenu.scss";
 
 const Navmenu = () => {
   const nav = useNavigate();
@@ -8,11 +8,46 @@ const Navmenu = () => {
       <div className="navmenu-container">
         <h2>Bar Shefet</h2>
         <div className="nav-buttons">
-        <h3 onClick={() => nav("/")}>Home</h3>
-        <h3 onClick={() => nav("/films")}>Films</h3>
-        <h3 onClick={() => nav("/photo")}>Photography</h3>
-        <h3 onClick={() => nav("/about")}>About</h3>
-        <h3 onClick={() => nav("/contact")}>Contact</h3>
+          <h3
+            onClick={() => {
+              nav("/");
+              window.scrollTo({ top: 0, left: 0 });
+            }}
+          >
+            Home
+          </h3>
+          <h3
+            onClick={() => {
+              nav("/films");
+              window.scrollTo({ top: 0, left: 0 });
+            }}
+          >
+            Films
+          </h3>
+          <h3
+            onClick={() => {
+              nav("/photo");
+              window.scrollTo({ top: 0, left: 0 });
+            }}
+          >
+            Photography
+          </h3>
+          <h3
+            onClick={() => {
+              nav("/about");
+              window.scrollTo({ top: 0, left: 0 });
+            }}
+          >
+            About
+          </h3>
+          <h3
+            onClick={() => {
+              nav("/contact");
+              window.scrollTo({ top: 0, left: 0 });
+            }}
+          >
+            Contact
+          </h3>
         </div>
       </div>
     </div>

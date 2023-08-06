@@ -8,4 +8,27 @@
   h1 {
     color: white;
   }
+  .film-vid-thumbnail {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "overlap";
+
+    .thumbnail {
+      width: 576px;
+      height: 345px;
+      grid-area: overlap;
+    }
+    .play-button {
+      grid-area: overlap;
+      position: relative;
+      top: calc(50% - 50px);
+      left: calc(50% - 50px);
+      width: 100px;
+      height: 100px;
+    }
+    &:hover{
+      cursor: pointer;
+    }
+  }
 }

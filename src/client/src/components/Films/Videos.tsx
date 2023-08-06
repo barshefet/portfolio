@@ -1,23 +1,15 @@
 import "./Videos.scss";
 import { videolist } from "../../assets/videoslist";
+import Vid from "./Vid";
 
 const Videos = () => {
-  return (
+  return  (
     <div className="videos-container">
       {videolist.map((vid: string) => (
-        <iframe
-          className="film-vid"
-          width="576"
-          height="345"
-          src={vid}
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; loop"
-          allowFullScreen
-        ></iframe>
+        <Vid vid={vid}/>
       ))}
     </div>
-  );
+  ) 
 };
 
 export default Videos;
