@@ -6,7 +6,7 @@ const Videos = () => {
   return  (
     <div className="videos-container">
       {videolist.map((vid: string) => (
-        <Vid vid={vid}/>
+        <Vid vid={vid} key={vid}/>
       ))}
     </div>
   ) 

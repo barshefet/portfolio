@@ -5,10 +5,20 @@ import Navmenu from "../Navmenu/Navmenu";
 const About = () => {
   return (
     <>
+    
       <Navmenu />
       <div className="about-container">
         <h1>About</h1>
-        <img src="images/me.JPG" alt="" />
+        {/* <iframe
+            width="600"
+            height={"360"}
+            src={`https://www.youtube.com/embed/UaSIug2E6II?controls=0&autoplay=1&mute=1&playlist=UaSIug2E6II&loop=1`}
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; loop"
+            
+          ></iframe> */}
+          <img src="images/me.JPG" />
         <div className="about-me">
         <p>My name is Bar Shefet. I'm a self-taught filmmaker that lives in Israel. I have a great passion for visual storytelling.</p>
         <p>Accidently fell in love with cinema and now here I am.</p>
