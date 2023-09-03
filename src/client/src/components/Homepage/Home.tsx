@@ -11,8 +11,8 @@ const Home = () => {
         <div className="vid">
           <iframe
           className="homevid"
-            width="1200"
-            height={"720"}
+            // width="1200"
+            // height={"720"}
             src={`https://www.youtube.com/embed/m2ptFk3sDEg?controls=0&autoplay=1&mute=1&playlist=m2ptFk3sDEg&loop=1`}
             title="YouTube video player"
             frameBorder="0"

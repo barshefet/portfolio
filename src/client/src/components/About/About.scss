@@ -1,22 +1,23 @@
-
-.about-container {
+@media only screen and (min-width: 600px) {
+  .about-container {
     background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 90px;
-  h1 {
-    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 90px;
+    h1 {
+      color: black;
+    }
+    img {
+      width: 800px;
+    }
+    .about-me {
+      margin-top: 60px;
+      margin-bottom: 100px;
+      p {
+        color: black;
+      }
+    }
   }
-  img{
-    width: 800px;
-  }
-  .about-me{
-    margin-top: 60px;
-    margin-bottom: 100px;
-  p{
-    color: black;
-  }
-}
 }

@@ -1,35 +1,37 @@
-.videos-container {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  grid-template-columns: auto auto;
-  gap: 100px;
-
-  h1 {
-    color: white;
-  }
-  .film-vid-thumbnail {
+@media only screen and (min-width: 600px) {
+  .videos-container {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "overlap";
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto auto;
+    gap: 100px;
 
-    .thumbnail {
-      width: 576px;
-      height: 345px;
-      grid-area: overlap;
-      border-radius: 10px;
+    h1 {
+      color: white;
     }
-    .play-button {
-      grid-area: overlap;
-      position: relative;
-      top: calc(50% - 50px);
-      left: calc(50% - 50px);
-      width: 100px;
-      height: 100px;
-    }
-    &:hover{
-      cursor: pointer;
+    .film-vid-thumbnail {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "overlap";
+
+      .thumbnail {
+        width: 576px;
+        height: 345px;
+        grid-area: overlap;
+        border-radius: 10px;
+      }
+      .play-button {
+        grid-area: overlap;
+        position: relative;
+        top: calc(50% - 50px);
+        left: calc(50% - 50px);
+        width: 100px;
+        height: 100px;
+      }
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 }

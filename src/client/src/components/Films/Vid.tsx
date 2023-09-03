@@ -8,7 +8,7 @@ const Vid = (props: any) => {
           className="film-vid"
           width="576"
           height="345"
-          src={`https://www.youtube.com/embed/${props.vid}?controls=0&autoplay=1&mute=1&playlist=${props.vid}&loop=1`}
+          src={`https://www.youtube.com/embed/${props.vid}?controls=0&autoplay=1&mute=0&playlist=${props.vid}&loop=1`}
           title="YouTube video player"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;"
