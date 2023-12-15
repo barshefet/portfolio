@@ -7,8 +7,11 @@ const Photography = () => {
   return (
     <>
       <Navmenu />
+     
       <div className="photos-container">
+      
         <h1>Photography</h1>
+      
         <Pics />
       </div>
       <Buttompageinfo />

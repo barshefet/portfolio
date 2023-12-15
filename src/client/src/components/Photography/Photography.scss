@@ -1,11 +1,49 @@
-.photos-container{
+.photos-container {
+width: 100%;
+
+ 
+    h1 {
+      color: white;
+      text-align: center;
+      margin-top: 100px;
+    }
+  
+  .grid-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 90px;
-    h1{
-        color: white;
+    flex-direction: row;
+    padding: 0 4px;
+    width: auto;
+
+    .column {
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 4px;
+      justify-content: flex-start;
+      align-self: flex-start;
+      
+      img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+      }
     }
     
+
+    
+  }
+  /* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
 }
