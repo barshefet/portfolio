@@ -1,11 +1,4 @@
-.grid-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-columns: repeat(8, 11vw);
-  img {
-    width: 100%;
-  }
-}
+// img{
+//  &:hover{ cursor: pointer;
+//  }
+// }

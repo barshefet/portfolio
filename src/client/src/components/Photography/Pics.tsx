@@ -17,25 +17,25 @@ const Pics = () => {
         <img src="images/photographs/9.png" className="img9" alt="" />
         <img src="images/photographs/10.jpg" className="img10" alt="" />
         <img src="images/photographs/11.jpg" className="img11" alt="" />
-        <img src="images/photographs/12.jpg" className="img11" alt="" />
+        <img src="images/photographs/12.jpg" className="img12" alt="" />
       </div>
       <div className="column">
-        <img src="images/photographs/13.jpg" className="img11" alt="" />
-        <img src="images/photographs/14.jpg" className="img11" alt="" />
-        <img src="images/photographs/15.jpg" className="img11" alt="" />
-        <img src="images/photographs/16.jpg" className="img11" alt="" />
-        <img src="images/photographs/17.jpg" className="img11" alt="" />
-        <img src="images/photographs/18.jpg" className="img11" alt="" />
-        <img src="images/photographs/19.jpg" className="img11" alt="" />
+        <img src="images/photographs/13.jpg" className="img13" alt="" />
+        <img src="images/photographs/14.jpg" className="img14" alt="" />
+        <img src="images/photographs/15.jpg" className="img15" alt="" />
+        <img src="images/photographs/16.jpg" className="img16" alt="" />
+        <img src="images/photographs/17.jpg" className="img17" alt="" />
+        <img src="images/photographs/18.jpg" className="img18" alt="" />
+        <img src="images/photographs/19.jpg" className="img19" alt="" />
       </div>
       <div className="column">
-        <img src="images/photographs/20.jpg" className="img11" alt="" />
-        <img src="images/photographs/21.jpg" className="img11" alt="" />
-        <img src="images/photographs/22.jpg" className="img11" alt="" />
-        <img src="images/photographs/23.jpg" className="img11" alt="" />
-        <img src="images/photographs/24.jpg" className="img11" alt="" />
-        <img src="images/photographs/25.jpg" className="img11" alt="" />
-        <img src="images/photographs/26.jpg" className="img11" alt="" />
+        <img src="images/photographs/20.jpg" className="img20" alt="" />
+        <img src="images/photographs/21.jpg" className="img21" alt="" />
+        <img src="images/photographs/22.jpg" className="img22" alt="" />
+        <img src="images/photographs/23.jpg" className="img23" alt="" />
+        <img src="images/photographs/24.jpg" className="img24" alt="" />
+        <img src="images/photographs/25.jpg" className="img25" alt="" />
+        {/* <img src="images/photographs/26.jpg" className="img11" alt="" /> */}
       </div>
       {/* <img src="images/photographs/27.jpg" className="img11" alt="" />
       <img src="images/photographs/28.jpg" className="img11" alt="" />
