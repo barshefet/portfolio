@@ -14,7 +14,7 @@ const Cinematography = () => {
         <div className="showreel-container">
           <Showreel />
         </div>
-        <h2>Films I Shot In my First Year in Film School</h2>
+        <h3>Films I Shot In my First Year in Film School</h3>
         <Cameralist />
       </div>
       <Buttompageinfo />
