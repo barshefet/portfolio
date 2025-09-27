@@ -22,7 +22,15 @@ const Navmenu = () => {
               window.scrollTo({ top: 0, left: 0 });
             }}
           >
-            Films
+            Director
+          </h3>
+          <h3
+            onClick={() => {
+              nav("/Cinematography");
+              window.scrollTo({ top: 0, left: 0 });
+            }}
+          >
+            Cinematography
           </h3>
           <h3
             onClick={() => {

@@ -1,0 +1,42 @@
+@media only screen and (min-width: 600px) {
+  .showreel-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    width: 100%;
+    place-items: center;
+
+    h1 {
+      color: white;
+    }
+    .showreel-thumbnail {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "overlap";
+
+      .thumbnail {
+        width: 1000px;
+        // height: 345px;
+        grid-area: overlap;
+        border-radius: 10px;
+        transition: transform 0.2s ease-in-out;
+      }
+      .play-button {
+        grid-area: overlap;
+        position: relative;
+        top: calc(50% - 35px);
+        left: calc(50% - 35px);
+        width: 70px;
+        height: 70px;
+      }
+      &:hover {
+        cursor: pointer;
+        .thumbnail {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+}
