@@ -22,7 +22,7 @@ const Home = () => {
           
           <div className="name-container">
             <h1 className="name">Bar Shefet</h1>
-            <h2 className="description">Aspiring Filmmaker</h2>
+            <h2 className="description">Director, Cinematographer, Editor, Colorist and Programmer.</h2>
           </div>
         </div>
         

@@ -8,7 +8,8 @@ const Films = () => {
     <>
       <div className="films-container">
         <Navmenu />
-        <h1>Films</h1>
+        <h1>Director</h1>
+        <h2>Short Films I made in my First year in Film School</h2>
         <Videos />
       </div>
       <Buttompageinfo />

@@ -1,6 +1,9 @@
+// @ts-ignore
 import "./About.scss";
 import Buttompageinfo from "../Buttompageinfo/Buttompageinfo";
 import Navmenu from "../Navmenu/Navmenu";
+
+
 
 const About = () => {
   return (

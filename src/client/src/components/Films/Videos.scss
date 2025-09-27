@@ -20,17 +20,21 @@
         height: 345px;
         grid-area: overlap;
         border-radius: 10px;
+        transition: transform 0.2s ease-in-out;
       }
       .play-button {
         grid-area: overlap;
         position: relative;
-        top: calc(50% - 50px);
-        left: calc(50% - 50px);
-        width: 100px;
-        height: 100px;
+        top: calc(50% - 35px);
+        left: calc(50% - 35px);
+        width: 70px;
+        height: 70px;
       }
       &:hover {
         cursor: pointer;
+        .thumbnail {
+          transform: scale(1.05);
+        }
       }
     }
   }
