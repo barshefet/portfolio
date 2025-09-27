@@ -1,5 +1,5 @@
 {
-  "name": "Bar Portfolio",
+  "name": "bar-portfolio",
   "scripts": {
     "start": "gulp",
     "build-client": "cd ./src/client && npm run build",
