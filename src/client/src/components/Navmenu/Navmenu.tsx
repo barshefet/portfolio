@@ -6,7 +6,7 @@ const Navmenu = () => {
   return (
     <div className="navmenu">
       <div className="navmenu-container">
-        <h2>Bar Shefet</h2>
+        <h2 className="nav-name">Bar Shefet</h2>
         <div className="nav-buttons">
           <h3
             onClick={() => {
