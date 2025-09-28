@@ -10,22 +10,20 @@ const Home = () => {
 
         <div className="vid">
           <iframe
-          className="homevid"
-            // width="1200"
-            // height={"720"}
+            className="homevid"
             src={`https://www.youtube.com/embed/m2ptFk3sDEg?controls=0&autoplay=1&mute=1&playlist=m2ptFk3sDEg&loop=1`}
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; loop"
-            
           ></iframe>
-          
+
           <div className="name-container">
             <h1 className="name">Bar Shefet</h1>
-            <h2 className="description">Director, Cinematographer, Editor, Colorist and Programmer.</h2>
+            <h2 className="description">
+              Director, Cinematographer, Editor, Colorist and Programmer.
+            </h2>
           </div>
         </div>
-        
       </div>
       <Buttompageinfo />
     </>
