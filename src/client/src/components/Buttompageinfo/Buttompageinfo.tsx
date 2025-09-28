@@ -24,7 +24,7 @@ const Buttompageinfo = () => {
         </div>
       </div>
       <div className="rights">
-        <p>©2035 by Bar Shefet. Created by Bar Shefet.</p>
+        <p>©2025 by Bar Shefet. Programed by Bar Shefet.</p>
       </div>
     </>
   );

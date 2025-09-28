@@ -32,14 +32,14 @@ const Navmenu = () => {
           >
             Cinematography
           </h3>
-          <h3
+          {/* <h3
             onClick={() => {
               nav("/photo");
               window.scrollTo({ top: 0, left: 0 });
             }}
           >
             Photography
-          </h3>
+          </h3> */}
           <h3
             onClick={() => {
               nav("/about");
