@@ -6,22 +6,21 @@ const Buttompageinfo = () => {
       <div className="info">
         <div className="left-info">
           <h4>bar.shefet@gmail.com</h4>
-          <h4>+972 50 338 3090</h4>
+          
         </div>
-        <div className="right-info">
-          <div className="insta">
-            <img src="images/insticon.png" />
-            <h4>
-              <a href="https://www.instagram.com/bar_shefet/">bar_shefet</a>
-            </h4>
-          </div>
-          <div className="github">
-            <img src="images/githublogo.png" />
-            <h4>
-              <a href="https://github.com/barshefet">barshefet</a>
-            </h4>
-          </div>
+        <div className="middle-info">
+            <div className="insta">
+            <a href="https://www.instagram.com/bar_shefet/" target="_blank" rel="noopener noreferrer">
+              <img src="images/instagram.png" alt="Instagram" />
+            </a>
+            </div>
+          <div className="youtube">
+            <a href="https://www.youtube.com/@bar4490" target="_blank" rel="noopener noreferrer">
+              <img src="images/youtube.png" alt="YouTube" />
+            </a>
+            </div>
         </div>
+        <div className="right-info"><h4>+972 50 338 3090</h4></div>
       </div>
       <div className="rights">
         <p>©2025 by Bar Shefet. Programed by Bar Shefet.</p>
