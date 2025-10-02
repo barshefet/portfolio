@@ -9,12 +9,12 @@ const Cinematography = () => {
     <>
       <div className="films-container">
         <Navmenu />
-        <h1>Cinematography</h1>
+        <h1>DOP</h1>
         <h2>Showreel 2024-2025</h2>
         <div className="showreel-container">
           <Showreel />
         </div>
-        <h3>Films I Shot In my First Year in Film School</h3>
+        <h3>Short Films I Shot as DOP</h3>
         <Cameralist />
       </div>
       <Buttompageinfo />

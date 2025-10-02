@@ -1,0 +1,51 @@
+.bottom-home {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+
+  .director {
+    display: flex;
+    flex-direction: column;
+    // width: 200px;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-family: "Bricolage Grotesque", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 550;
+      font-style: normal;
+      font-variation-settings: "wdth" 300;
+      font-size: 100px;
+      font-weight: 500;
+      margin: 0;
+    }
+  }
+  .cinematographer {
+    display: flex;
+    flex-direction: column;
+    // width: 200px;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-family: "Bricolage Grotesque", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 550;
+      font-style: normal;
+      font-variation-settings: "wdth" 300;
+      font-size: 100px;
+      font-weight: 500;
+      margin: 0;
+    }
+  }
+  .and {
+    font-size: 110px;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 550;
+    font-style: normal;
+    font-variation-settings: "wdth" 300;
+  }
+}

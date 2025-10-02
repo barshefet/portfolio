@@ -21,8 +21,11 @@
     .middle-info {
       display: flex;
       flex-direction: row;
-      align-items: flex-start;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
       gap: 15px;
+      align-items: center;
       .insta {
         display: flex;
         // flex-direction: row;
@@ -53,8 +56,8 @@
         // min-width: 150px;
         margin: 0;
         img {
-          width: 35px;
-          height: 35px;
+          width: 40px;
+          height: 40px;
           border-radius: 5px;
           display: flex;
           justify-content: center;
@@ -76,9 +79,9 @@
     height: 25px;
 
     font-weight: 300;
-    color: rgb(190, 190, 190);
+    color: rgb(255, 255, 255);
     margin-top: 40px;
-    margin-bottom: 40px;
+    // margin-bottom: 40px;
     p {
       margin-left: 120px;
     }
