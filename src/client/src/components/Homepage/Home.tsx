@@ -10,14 +10,20 @@ const Home = () => {
         <Navmenu />
 
         <div className="vid">
-          <iframe
+          {/* <iframe
             className="homevid"
             src={`https://www.youtube.com/embed/u2LMhCEA4p8?controls=0&autoplay=1&mute=1&playlist=u2LMhCEA4p8&loop=1`}
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; loop"
+          ></iframe> */}
+          <iframe
+            src="https://player.vimeo.com/video/1124060625?autoplay=1&loop=1&background=1&muted=1"
+            frameBorder="0"
+            allow="autoplay; fullscreen"
+            // allowFullScreen
+            className="homevid"
           ></iframe>
-
           <div className="name-container">
             <h1 className="name">Bar Shefet</h1>
             <h2 className="description">
