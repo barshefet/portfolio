@@ -1,17 +1,29 @@
+import { useState } from "react";
 import "./Buttompageinfo.scss";
 
 const Buttompageinfo = () => {
+  const [status, setStatus] = useState("GET IN TOUCH");
   return (
     <>
       <div className="info-container">
         <div className="contactme-container">
           <div className="contactme-status">
-            <div className="status-text">GET IN TOUCH</div>
-            <div className="status-text">CLICK TO COPY</div>
-            <div className="status-text">COPIED</div>
+            <div className="status-text">{status}</div>
           </div>
           <h1 className="email">
-            <span>bar.shefet@gmail.com</span>
+            <span
+              onClick={() => {
+                navigator.clipboard.writeText("bar.shefet@gmail.com");
+                setStatus("✨COPIED");
+                setTimeout(() => {
+                  setStatus("CLICK TO COPY");
+                }, 1000);
+              }}
+              onMouseEnter={() => setStatus("CLICK TO COPY")}
+              onMouseLeave={() => setStatus("GET IN TOUCH")}
+            >
+              bar.shefet@gmail.com
+            </span>
           </h1>
         </div>
         <div className="info">
