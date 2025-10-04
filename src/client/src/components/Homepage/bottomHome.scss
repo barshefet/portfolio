@@ -95,16 +95,38 @@
   cursor: pointer;
   color: #000000;
   font-family: Times New Roman;
-  font-size: 30px;
+  font-size: clamp(18px, 4vw, 30px);
   font-style: italic;
-  padding: 12px 30px;
+  padding: clamp(8px, 2vw, 12px) clamp(20px, 5vw, 30px);
   text-decoration: none;
   text-shadow: 0px 1px 0px #545454;
-}
-.seeButton:hover {
-  background-color: #dedede;
-}
-.seeButton:active {
-  position: relative;
-  top: 1px;
+  transition: all 0.3s ease;
+  transform: scale(1);
+  
+  &:hover {
+    background-color: #dedede;
+    transform: scale(1.05);
+    box-shadow: 4px 6px 8px -2px #4d4d4d;
+  }
+  
+  &:active {
+    position: relative;
+    top: 1px;
+    transform: scale(0.98);
+    box-shadow: 2px 3px 4px -2px #4d4d4d;
+    transition: all 0.1s ease;
+  }
+  
+  // Mobile responsive scaling
+  @media (max-width: 768px) {
+    font-size: clamp(16px, 3.5vw, 24px);
+    padding: clamp(6px, 1.5vw, 10px) clamp(16px, 4vw, 24px);
+    border-radius: 30px;
+  }
+  
+  @media (max-width: 480px) {
+    font-size: clamp(14px, 3vw, 20px);
+    padding: clamp(5px, 1vw, 8px) clamp(12px, 3vw, 20px);
+    border-radius: 25px;
+  }
 }
