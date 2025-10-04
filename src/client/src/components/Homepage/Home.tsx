@@ -21,7 +21,6 @@ const Home = () => {
             src="https://player.vimeo.com/video/1124060625?autoplay=1&loop=1&background=1&muted=1"
             frameBorder="0"
             allow="autoplay; fullscreen"
-            // allowFullScreen
             className="homevid"
           ></iframe>
           <div className="name-container">
