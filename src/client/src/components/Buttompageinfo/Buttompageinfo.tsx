@@ -37,7 +37,7 @@ const Buttompageinfo = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {"Instagram"}
+                {"INSTAGRAM"}
               </a>
             </div>
             <div className="youtube">
@@ -46,7 +46,7 @@ const Buttompageinfo = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {"YouTube"}
+                {"YOUTUBE"}
               </a>
             </div>
           </div>
