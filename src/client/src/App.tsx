@@ -5,7 +5,7 @@ import Films from "./components/Films/Films";
 import Cinematography from "./components/Cinematography/Cinematography";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
-// import './components/MobileMaster.scss'
+import './components/MobileMaster.scss'
 
 function App() {
   return (

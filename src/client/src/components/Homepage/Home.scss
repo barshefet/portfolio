@@ -16,12 +16,12 @@
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
   grid-template-areas: "overlap";
-  padding-top: 70px; // matches mobile navmenu height
+  // height: 100vh; // set container height to full viewport
 
   .homevid {
     grid-area: overlap;
     width: 100vw;
-    height: calc(100vh - 70px); // subtract mobile navmenu height
+    height: 100vh; // full viewport height
     object-fit: cover;
     margin: 0;
     pointer-events: none;
@@ -123,10 +123,10 @@
 // Tablet and Desktop styles
 @media only screen and (min-width: 600px) {
   .vid {
-    padding-top: 90px; // matches desktop navmenu height
+    height: 100vh; // set container height to full viewport
 
     .homevid {
-      height: calc(100vh - 90px); // subtract desktop navmenu height
+      height: 100vh; // full viewport height
     }
 
     .name-container {

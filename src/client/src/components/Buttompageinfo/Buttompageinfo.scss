@@ -1,14 +1,154 @@
+// Mobile styles (default - mobile first approach)
+.info-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  padding: 0 20px;
+
+  .contactme-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    .contactme-status {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 18px;
+      overflow: hidden;
+      margin-bottom: 15px;
+      
+      .status-text {
+        font-weight: 500;
+        font-size: 16px;
+        margin: 0;
+        transform-style: preserve-3d;
+      }
+    }
+
+    .email {
+      font-family: "Bricolage Grotesque", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: normal;
+      font-variation-settings: "wdth" 200;
+      font-size: clamp(24px, 6vw, 50px);
+      margin: 5px;
+      padding: 8px 12px;
+      border: 1px dashed white;
+      background-color: rgb(12, 11, 18);
+      line-height: 1.7;
+      border-radius: 15px;
+      position: relative;
+      text-align: center;
+      
+      &:hover {
+        cursor: pointer;
+        > span {
+          display: inline-block;
+          transform: scale(0.98);
+          transition: ease-in-out 0.5s;
+        }
+      }
+    }
+  }
+
+  .info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 300;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    position: relative;
+    min-height: 60px;
+
+    .left-info {
+      position: absolute;
+      left: 10px;
+      display: flex;
+      flex-direction: column;
+      font-size: 10px;
+      width: 25%;
+      text-align: left;
+    }
+
+    .middle-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      z-index: 1;
+      
+      a {
+        color: white;
+        text-decoration: none;
+        font-size: 10px;
+        padding: 1px 6px;
+        border: 1px solid white;
+        border-radius: 10px;
+        white-space: nowrap;
+        
+        &:hover {
+          color: rgba(255, 255, 255, 0.696);
+        }
+      }
+    }
+
+    .right-info {
+      position: absolute;
+      right: 10px;
+      display: flex;
+      flex-direction: column;
+      font-size: 10px;
+      width: 25%;
+      text-align: right;
+    }
+  }
+
+  .rights {
+    background-color: rgb(26, 26, 26);
+    height: auto;
+    min-height: 25px;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    margin-top: 30px;
+    padding: 10px;
+    text-align: center;
+    
+    p {
+      margin: 0;
+      font-size: 14px;
+    }
+  }
+
+  h4 {
+    font-weight: 300;
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+// Desktop styles (600px and above)
 @media only screen and (min-width: 600px) {
   .info-container {
     display: flex;
     flex-direction: column;
     margin-top: 80px;
+    padding: 0;
     .contactme-container {
       color: white;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      
       .contactme-status {
         display: flex;
         flex-direction: column;
@@ -17,6 +157,7 @@
         height: 18px;
         overflow: hidden;
         margin-bottom: 18px;
+        
         .status-text {
           font-weight: 500;
           font-size: 18px;
@@ -39,6 +180,8 @@
         line-height: 1.7;
         border-radius: 15px;
         position: relative;
+        text-align: initial;
+        
         &:hover {
           cursor: pointer;
           > span {
@@ -49,6 +192,7 @@
         }
       }
     }
+
     .info {
       display: flex;
       flex-direction: row;
@@ -59,25 +203,38 @@
       margin-top: 80px;
       margin-bottom: 40px;
       position: relative;
+      gap: initial;
 
       .left-info {
         position: absolute;
         left: 100px;
         display: flex;
         flex-direction: column;
+        align-items: initial;
+        text-align: initial;
+        font-size: initial;
+        width: initial;
       }
+
       .right-info {
         position: absolute;
         right: 100px;
         display: flex;
         flex-direction: column;
+        align-items: initial;
+        text-align: initial;
+        font-size: initial;
+        width: initial;
       }
+
       .middle-info {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
         gap: 10px;
+        flex-wrap: initial;
+        
         a {
           color: white;
           text-decoration: none;
@@ -85,29 +242,34 @@
           padding: 2px 12px;
           border: 1px solid white;
           border-radius: 15px;
+          
           &:hover {
             color: rgba(255, 255, 255, 0.696);
           }
         }
       }
     }
+
     .rights {
       position: relative;
       background-color: rgb(26, 26, 26);
       height: 25px;
-
       font-weight: 300;
       color: rgb(255, 255, 255);
       margin-top: 40px;
-      // margin-bottom: 40px;
+      padding: 0;
+      text-align: initial;
+      
       p {
         margin-left: 120px;
+        font-size: initial;
       }
     }
 
     h4 {
       font-weight: 300;
       font-size: 18px;
+      text-align: initial;
     }
   }
 }
