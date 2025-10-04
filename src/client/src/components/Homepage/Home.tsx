@@ -26,7 +26,7 @@ const Home = () => {
           <div className="name-container">
             <h1 className="name">Bar Shefet</h1>
             <h2 className="description">
-              Director, DOP, Editor, Colorist and VFX Artist.
+              Short Films — Commercials — Narrative.
             </h2>
             <div className="arrow"></div>
           </div>

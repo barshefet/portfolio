@@ -41,3 +41,68 @@
     }
   }
 }
+
+@media only screen and (max-width: 599px) {
+  .showreel-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr;
+    width: 100%;
+    place-items: center;
+
+    h1 {
+      color: white;
+    }
+
+    .showreel-thumbnail {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "overlap";
+
+      .thumbnail {
+        width: 100%;
+        grid-area: overlap;
+        border-radius: 10px;
+      }
+      .play-button {
+        grid-area: overlap;
+        position: relative;
+        top: calc(50% - 40px);
+        left: calc(50% - 40px);
+        width: 80px;
+        height: 80px;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+ h1 {
+      font-family: "Bricolage Grotesque", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 550;
+      font-style: normal;
+      font-variation-settings: "wdth" 300;
+      color: white;
+      margin-bottom: 0;
+    }
+    h2 {
+      font-family: "Bricolage Grotesque", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 200;
+      font-style: normal;
+      font-variation-settings: "wdth" 300;
+      font-size: 23px;
+      color: white;
+      margin-top: 10px;
+      margin-bottom: 25px;
+    }
+    h3 {
+      font-size: 20px;
+      color: white;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+}
