@@ -1,120 +1,162 @@
-@media only screen and (min-width: 600px) {
-  .body {
-    justify-content: center;
+// Mobile styles (default - mobile first approach)
+.body {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.vid {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas: "overlap";
+  padding-top: 70px; // matches mobile navmenu height
+
+  .homevid {
+    grid-area: overlap;
+    width: 100vw;
+    height: calc(100vh - 70px); // subtract mobile navmenu height
+    object-fit: cover;
+    margin: 0;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .name-container {
+    grid-area: overlap;
+    place-self: center;
+    width: fit-content;
+    height: fit-content;
+    z-index: 2;
+    transform: translateY(10vh);
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    width: 100%;
-    overflow-x: hidden;
+    text-align: center;
+    padding: 0 20px;
+
+    .name {
+      font-family: "Unbounded", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      font-variation-settings: "wdth" 100;
+      color: rgb(255, 255, 255);
+      font-size: clamp(40px, 8vw, 110px); // responsive font size
+      margin-bottom: -5px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .description {
+      margin-bottom: 0;
+      font-family: "Bricolage Grotesque", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 550;
+      font-style: normal;
+      font-variation-settings: "wdth" 300;
+      font-size: clamp(16px, 4vw, 34px); // responsive font size
+      margin-top: 3px;
+      color: white;
+      font-weight: 300;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .arrow,
+    .arrow::before {
+      position: absolute;
+      left: 50%;
+    }
+
+    .arrow {
+      width: 30px;
+      height: 30px;
+      top: 100%;
+      margin-top: 25px;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+      border-left: none;
+      border-top: none;
+      border-right: 2px #fff solid;
+      border-bottom: 2px #fff solid;
+
+      &::before {
+        content: "";
+        width: 15px;
+        height: 15px;
+        top: 50%;
+        margin: -7.5px 0 0 -7.5px;
+        border-left: none;
+        border-top: none;
+        border-right: 1px #fff solid;
+        border-bottom: 1px #fff solid;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-name: arrow;
+      }
+    }
+
+    @keyframes arrow {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+        transform: translate(-10px, -10px);
+      }
+    }
   }
-  .container {
-    width: 100%;
-    overflow: hidden;
-  }
+}
+
+.bottom-home {
+  height: 600px; // smaller on mobile
+  background-color: rgb(0, 0, 0);
+}
+
+// Tablet and Desktop styles
+@media only screen and (min-width: 600px) {
   .vid {
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
-    grid-template-areas: "overlap";
-    padding-top: 90px; // matches navmenu height
+    padding-top: 90px; // matches desktop navmenu height
 
     .homevid {
-      grid-area: overlap;
-      width: 100vw;
-      height: 100vh;
-      object-fit: cover;
-      margin: 0;
-      pointer-events: none;
-      user-select: none;
+      height: calc(100vh - 90px); // subtract desktop navmenu height
     }
+
     .name-container {
-      grid-area: overlap;
-      place-self: center;
-      width: fit-content;
-      height: fit-content;
-      z-index: 2;
       transform: translateY(15vh);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      // margin-bottom: 100px;
+      padding: 0;
+
       .name {
-        font-family: "Unbounded", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 400;
-        font-style: normal;
-        font-variation-settings: "wdth" 100;
-        color: rgb(255, 255, 255);
         font-size: 110px;
         margin-bottom: -15px;
-        // text-shadow: 3px 3px 2px rgb(0, 0, 0);
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
       }
+
       .description {
-        margin-bottom: 0;
-        font-family: "Bricolage Grotesque", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 550;
-        font-style: normal;
-        font-variation-settings: "wdth" 300;
         font-size: 34px;
-        margin-top: 3px;
-        color: white;
-        font-weight: 300;
-        // text-shadow: 1px 1px 2px black;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-      }
-      ///////////
-      .arrow,
-      .arrow::before {
-        position: absolute;
-        left: 50%;
       }
 
       .arrow {
         width: 40px;
         height: 40px;
-        top: 100%;
         margin-top: 35px;
-        -webkit-transform: rotate(45deg);
-        transform: rotate(45deg);
-        border-left: none;
-        border-top: none;
-        border-right: 2px #fff solid;
-        border-bottom: 2px #fff solid;
 
         &::before {
-          content: "";
           width: 20px;
           height: 20px;
-          top: 50%;
           margin: -10px 0 0 -10px;
-          border-left: none;
-          border-top: none;
-          border-right: 1px #fff solid;
-          border-bottom: 1px #fff solid;
-          animation-duration: 2s;
-          animation-iteration-count: infinite;
-          animation-name: arrow;
         }
       }
-
-      @keyframes arrow {
-        0% {
-          opacity: 1;
-        }
-        100% {
-          opacity: 0;
-          transform: translate(-10px, -10px);
-        }
-      }
-      /// //////
     }
   }
 
   .bottom-home {
     height: 800px;
-    background-color: rgb(0, 0, 0);
   }
 }
