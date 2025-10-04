@@ -4,14 +4,13 @@
   color: white;
   justify-content: center;
   align-items: center;
-  gap: clamp(1rem, 4vw, 100px);
+  gap: clamp(1rem, 1vw, 100px);
   width: 100%;
   max-width: 100vw;
   box-sizing: border-box;
   padding: 0 2vw;
   flex-wrap: nowrap;
   overflow: hidden;
-
   .director {
     display: flex;
     flex-direction: column;
@@ -120,13 +119,13 @@
   // Mobile responsive scaling
   @media (max-width: 768px) {
     font-size: clamp(16px, 3.5vw, 24px);
-    padding: clamp(6px, 1.5vw, 10px) clamp(16px, 4vw, 24px);
+    // padding: clamp(6px, 1.5vw, 10px) clamp(16px, 4vw, 24px);
     border-radius: 30px;
   }
   
   @media (max-width: 480px) {
     font-size: clamp(14px, 3vw, 20px);
-    padding: clamp(5px, 1vw, 8px) clamp(12px, 3vw, 20px);
+    // padding: clamp(5px, 1vw, 8px) clamp(12px, 3vw, 20px);
     border-radius: 25px;
   }
 }

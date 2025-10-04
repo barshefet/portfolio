@@ -31,6 +31,7 @@ const Home = () => {
             <div className="arrow"></div>
           </div>
         </div>
+        <div className="short-logline">Available for commercial, narrative, and music video projects.</div>
         <BottomHome />
       </div>
       <div id="bottom">
