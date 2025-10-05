@@ -9,7 +9,7 @@ const Films = () => {
       <div className="films-container">
         <Navmenu />
         <h1>Director</h1>
-        <h2>Short Films I made in my First year in Film School</h2>
+        <h2>Written, Edited and Directed by Me</h2>
         <Videos />
       </div>
       <Buttompageinfo />

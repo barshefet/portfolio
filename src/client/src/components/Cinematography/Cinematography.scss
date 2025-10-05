@@ -9,6 +9,11 @@
 
     h1 {
       color: white;
+      font-family: "Unbounded", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      font-variation-settings: "wdth" 100;
     }
 
     .showreel-thumbnail {
@@ -53,6 +58,11 @@
 
     h1 {
       color: white;
+       font-family: "Unbounded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
     }
 
     .showreel-thumbnail {
@@ -79,30 +89,35 @@
       }
     }
   }
- h1 {
-      font-family: "Bricolage Grotesque", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 550;
-      font-style: normal;
-      font-variation-settings: "wdth" 300;
-      color: white;
-      margin-bottom: 0;
-    }
-    h2 {
-      font-family: "Bricolage Grotesque", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 200;
-      font-style: normal;
-      font-variation-settings: "wdth" 300;
-      font-size: 23px;
-      color: white;
-      margin-top: 10px;
-      margin-bottom: 25px;
-    }
-    h3 {
-      font-size: 20px;
-      color: white;
-      margin-top: 40px;
-      margin-bottom: 20px;
-    }
+  h1 {
+    font-family: "Unbounded", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    color: white;
+    margin-bottom: 0;
+  }
+  h2 {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings: "wdth" 300;
+    font-size: 23px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  h3 {
+    font-size: 23px;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings: "wdth" 300;
+  }
 }
