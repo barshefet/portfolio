@@ -12,25 +12,17 @@ const About = () => {
       <Navmenu />
       <div className="about-container">
         <h1>About</h1>
-        {/* <iframe
-            width="600"
-            height={"360"}
-            src={`https://www.youtube.com/embed/UaSIug2E6II?controls=0&autoplay=1&mute=1&playlist=UaSIug2E6II&loop=1`}
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; loop"
-            
-          ></iframe> */}
+        <div className="about-image">
           <img src="images/me.JPG" />
-        <div className="about-me">
-        <p>My name is Bar Shefet. I'm a self-taught filmmaker that lives in Israel. I have a great passion for visual storytelling.</p>
-        <p>Accidently fell in love with cinema and now here I am.</p>
-        <p>Starting director and writer. I know how to code, edit, color grade, photoshop and composite - professionally.</p>
-        <p>Own a Sony A7IV camera in which I ususally film my work with.</p>
-        <p>I would love to colaborate with you on anything that is Industry related.</p> 
+          <div className="about-me">
+            <p>I’m a director and cinematographer based in Tel Aviv, currently studying at the Steve Tisch School of Film and Television at Tel Aviv University.</p>
+            <p>My work is driven by a deep passion for visual storytelling — crafting images that not only look beautiful, but serve the story above all else.</p>
+            <p></p>
+          </div>
         </div>
       </div>
       <Buttompageinfo />
+
     </>
   );
 };
