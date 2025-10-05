@@ -31,8 +31,13 @@ const Home = () => {
             <div className="arrow"></div>
           </div>
         </div>
-        <div className="short-logline">Available for Commercial, Narrative, and Music Video projects.</div>
         <BottomHome />
+        <div className="short-logline-container">
+          <img src="images/homeLogline.jpg" alt="Logline"/>
+          <div className="short-logline">
+            Available for Commercial, Narrative, and Music Video projects.
+          </div>
+        </div>
       </div>
       <div id="bottom">
         <Buttompageinfo />

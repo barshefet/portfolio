@@ -81,7 +81,7 @@
     .director h1,
     .cinematographer h1,
     .and {
-      font-size: clamp(0.8rem, 4vw, 2rem);
+      font-size: clamp(0.8rem, 25px, 2rem);
     }
   }
 }
@@ -119,13 +119,13 @@
   // Mobile responsive scaling
   @media (max-width: 768px) {
     font-size: clamp(16px, 3.5vw, 24px);
-    // padding: clamp(6px, 1.5vw, 10px) clamp(16px, 4vw, 24px);
+    padding: clamp(6px, 1.5vw, 10px) clamp(16px, 4vw, 24px);
     border-radius: 30px;
   }
   
   @media (max-width: 480px) {
     font-size: clamp(14px, 3vw, 20px);
-    // padding: clamp(5px, 1vw, 8px) clamp(12px, 3vw, 20px);
+    padding: clamp(5px, 1vw, 8px) clamp(12px, 3vw, 20px);
     border-radius: 25px;
   }
 }
