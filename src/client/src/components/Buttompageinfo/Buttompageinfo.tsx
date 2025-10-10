@@ -28,7 +28,7 @@ const Buttompageinfo = () => {
         </div>
         <div className="info">
           <div className="left-info">
-            <h4>Bar Shefet© 2025. DESIGN&DEV by Bar Shefet.</h4>
+            <h4>DESIGN&DEV by Bar Shefet.</h4>
           </div>
           <div className="middle-info">
             <div className="insta">
@@ -54,6 +54,7 @@ const Buttompageinfo = () => {
             <h4>+972 50 338 3090</h4>
           </div>
         </div>
+        <div className="rights">Bar Shefet© 2025.</div>
       </div>
     </>
   );
